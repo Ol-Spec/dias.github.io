@@ -1,0 +1,196 @@
+<html> 
+<head>
+<style>
+body {
+	background: white;
+	font-family:"Roboto", sans-self, Helvetica, Arial;
+	margin:0;
+	background:url(rr.jpg); 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+width:83.33%;
+margin:30px auto 0 auto;
+box-sizing: border-box;
+min-height: 100%;
+padding-bottom: 90px;
+font-family: Arial;
+font-size: 17px;
+}
+.main {
+margin-right:280px;
+background:#fbfbfb;
+padding-bottom:50;
+font-family: Century Gothic;
+}
+p {
+	text-align:justify;
+	padding: 5px;
+    display:inline-block;
+	line-height: 1.7;
+}
+h1 {
+	text-align:center;
+	margin: 40px;
+	padding: 0;
+	font-size: 32px;
+}
+.container {
+	width: 700px;
+    padding: 12px;
+    background-color: white;
+	border-radius: 18px;
+	padding-bottom: 90px;
+	margin: 64px auto;
+	height: 780px;
+}
+.button{
+	background-color: #662d91;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 22px;
+    cursor: pointer;
+	border-radius: 18px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 23px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: url(rr.jpg);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+input {
+  padding: 3px 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  opacity: 0;
+  padding: 4px 7px;
+  position: absolute;
+  margin-left: -1000px;
+  background: white;
+  box-shadow: 1px 1px 6px rgb(195, 195, 195);
+  border-radius: 2px;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.list li {
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.list li:hover {
+  background: lightgray;
+}
+
+.show .list { 
+  margin-left: 0;
+  opacity: 1;
+}
+
+.list li .amount {
+  display: inline-block;
+  padding: 2px 3px;
+  background-color: rgb(83, 177, 211);
+  border-radius: 3px;
+  margin: 0 0 3px 10px;
+  font-size: 65%;
+  color: white;
+}
+
+a {
+    color: dodgerblue;
+}
+.selwork{
+ position: relative;
+ width: 200px;
+ padding: 10px;
+ margin: 0;
+  
+ background: #8151a5;
+ color: #fff;
+ outline: none;
+ cursor: pointer;
+
+ /* Настройки шрифтов */
+ font-weight: Arial;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="content">
+<main>
+<h1>Регистрация специалиста</h1>
+<label for="fio">Укажите ФИО</label>
+    <input type="text" placeholder="" name="fio" required>
+    
+	<label for="email">Email</label>
+    <input type="text" placeholder="Введите Email" name="email" required>
+	
+	<div class="selwork">
+	<select>
+	<option disabled selected>Выберите место работы</option>
+	<option value>Организация 1</option>
+	<option value>Организация 2</option>
+	<option value>Организация 3</option>
+	</select>
+	</div>
+	<br>
+    <label for="psw">Пароль</label>
+    <input type="password" placeholder="Введите пароль" name="psw" required>
+
+    <label for="psw-repeat">Повторите пароль</label>
+    <input type="password" placeholder="" name="psw-repeat" required>
+
+
+
+	<center>
+	<a href="for" class="button">Зарегистрироваться</a>
+	<p>Уже есть аккаунт?  <a href="#">Войти</a></p>
+	</center>
+</div>
+</div>
+</main>
+</div>
+</div>

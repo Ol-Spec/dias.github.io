@@ -1,0 +1,237 @@
+<html> 
+<head>
+<title>OS</title>
+<style>
+.ico img {
+height: 100 px;
+margin-top: 7 px;
+padding: 0 12 3 20px;
+background:#662d91;
+ } 
+ .head {
+	 background-color:#662d91;
+ } 
+ * {
+	padding:0;
+	margin:0 px;
+}
+a {
+	text-decoration:none;
+}
+body {
+	background: white;
+	font-family:"Roboto", sans-self, Helvetica, Arial;
+	margin:0;
+	background:url(rr.jpg);
+}
+
+*, *::after, *::before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+#mainmenu {
+position: relative;
+background: #9a58cc;
+height: 40px;
+margin: 0px 0;
+padding: 0;
+float: left;
+width: 100%;
+z-index: 10;
+}
+#mainmenu ul {
+clear: left;
+position: relative;
+right: 50%;
+height: 40px;
+float: right;
+text-align: center;
+font: 15px Arial, Helvetica, sans-serif;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+/** Основные пункты **/
+#mainmenu > ul > li {
+position: relative;
+left: 50%;
+float: left;
+height: 40px;
+padding: 0;
+margin: 0
+}
+#mainmenu > ul > li > a {
+border-left: 1px solid #662d91;
+display: block;
+color: white;
+text-decoration: none;
+padding: 0 20px;
+line-height: 40px;
+}
+#mainmenu > ul > li:first-child > a {
+border: none
+}
+#mainmenu > ul > li:hover > a, #mainmenu > ul > li.hover > a, #mainmenu > ul > li.active > a {
+color: white;
+}
+#mainmenu > ul > li:hover, #mainmenu > ul > li.hover, #mainmenu > ul > li.active {
+background: #662d91;
+}
+/* Выпадающие подпункты */
+#mainmenu ul li ul {
+position: absolute;
+left: 0;
+top: 40px;
+display: none;
+list-style: none;
+visibility: hidden;
+padding: 0;
+margin: 0;
+width: 200px
+}
+#mainmenu > ul > li ul li {
+background-color: #662d91;
+position: relative;
+left: 0;
+display: list-item;
+float: none;
+height: auto;
+margin: 0;
+text-align: left;
+}
+#mainmenu ul li ul li a {
+border-bottom: 1px solid #999;
+display: block;
+color: white;
+padding: 10px 15px;
+text-decoration: none;
+}
+#mainmenu ul li ul li.parent a {
+position: relative;
+}
+#mainmenu ul li ul > li.parent > a::before {
+border-top: 1px solid #fff;
+border-right: 1px solid #fff;
+content: "";
+display: block;
+position: absolute;
+right: 15px;
+top: 50%;
+transform: translateY(-50%) rotate(45deg);
+height: 6px;
+width: 6px;
+}
+#mainmenu ul li ul li:hover, #mainmenu ul li ul li.hover {
+background-color: #662d91;
+}
+#mainmenu ul li:hover ul, #mainmenu ul li.hover ul {
+display: block
+}
+
+/* Выпадающие пункты второго уровня */
+#mainmenu ul  li:hover > ul  {
+opacity: 1;
+visibility: visible;
+margin: 0;
+}
+#mainmenu ul li ul li ul {
+top: 0;
+left: 200px;
+margin: 0 0 0 20px;
+width: 180px
+}
+
+.content {
+width:83.33%;
+margin:30px auto 0 auto;
+box-sizing: border-box;
+min-height: 100%;
+padding-bottom: 90px;
+font-family: century;
+font-size: 20px;
+}
+.main {
+margin-right:280px;
+background:#fbfbfb;
+padding-bottom:50;
+}
+p {
+	text-align:justify;
+	padding: 5px;
+    display:inline-block;
+	line-height: 1.7;
+}
+h1 {
+	text-align:center;
+	margin: 40px;
+	padding: 0;
+}
+.container {
+	width: 900px;
+    padding: 16px;
+    background-color: white;
+	border-radius: 18px;
+	padding-bottom: 90px;
+	margin: 34px 160px 23px;
+}
+</style>
+</head>
+<header>
+<div class = "head">
+<div class="ico"><a href='sate.html'><img src="1122.png"></a></div>
+</header>
+<body> 
+<div id="mainmenu">
+<ul>
+<li><a href="#">ГЛАВНАЯ</a></li>
+<li><a href="#">ФОРУМ</a></li>
+<!-- Пункт меню 2 -->
+<li class="active"><a href="#" class="active">РАЗДЕЛЫ</a>
+<ul>
+<li class="parent"><a href="#">Программное обеспечение</a>
+<ul>
+<li><a href="os.html">Операционная система</a>
+<li><a href="#">Файлы</a></li>
+<li><a href="#">BIOS</a></li>
+</ul>
+</li>
+<li class="parent"><a href="#">Аппаратное обеспечение</a>
+<ul>
+<li><a href="monitors.html">Монитор</a></li>
+<li><a href="#">Системный блок</a></li>
+<li><a href="#">Периферия <br>(мышь, клавиатура, колонки)</a></li>
+</ul>
+</li>
+<li><a href="#">подпункт 2.4</a></li>
+<li><a href="#">Длинный подпункт, длинный подпункт</a></li>
+</ul>
+</li>
+<li><a href="#">РАЗРАБОТЧИКИ</a>
+<ul class="last">
+<li><a href="#">...</a></li>
+<li><a href="#">подпункт 4.2</a></li>
+<li><a href="#">подпункт 4.3</a></li>
+<li><a href="#">подпункт 4.4</a></li>
+<li><a href="#">подпункт 4.5</a></li>
+</ul>
+</li>
+<li><a href="reg.html">Регистрация/вход</a></li>
+</li>
+</ul>
+</div>
+
+<div class="container">
+<div class="content">
+<main>
+<h1>Основные проблемы, касающиеся операционной системы</h1>
+<p>... </p></main>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<html> 
+<head>
+<style>
+body {
+	background: white;
+	font-family:"Roboto", sans-self, Helvetica, Arial;
+	margin:0;
+	background:url(rr.jpg); 
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+width:83.33%;
+margin:30px auto 0 auto;
+box-sizing: border-box;
+min-height: 100%;
+padding-bottom: 90px;
+font-family: Arial;
+font-size: 17px;
+}
+.main {
+margin-right:280px;
+background:#fbfbfb;
+padding-bottom:50;
+}
+p {
+	text-align:justify;
+	padding: 5px;
+    display:inline-block;
+	line-height: 1.7;
+}
+h1 {
+	text-align:center;
+	margin: 40px;
+	padding: 0;
+	font-size: 32px;
+}
+.container {
+	width: 700px;
+    padding: 12px;
+    background-color: white;
+	border-radius: 18px;
+	padding-bottom: 90px;
+	/*margin: 34px 160px 23px;*/
+	margin: 64px auto;
+	height: 780px;
+}
+.button{
+	background-color: #662d91;
+    border: 2px solid #ffffff; /* Параметры рамки */
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 70px;
+    cursor: pointer;
+	border-radius: 18px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 23px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: url(rr.jpg);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="content">
+<main>
+<h1>Регистрация пользователя</h1>
+<label for="fio">Укажите ФИО</label>
+    <input type="text" placeholder="" name="fio" required>
+    
+	<label for="email">Email</label>
+    <input type="text" placeholder="Введите Email" name="email" required>
+
+    <label for="psw">Пароль</label>
+    <input type="password" placeholder="Введите пароль" name="psw" required>
+
+    <label for="psw-repeat">Повторите пароль</label>
+    <input type="password" placeholder="" name="psw-repeat" required>
+    <p>Я соглашаюсь с <a href="#">политикой конфиденциальности</a></p>
+	<center>
+	<a href="for" class="button">Зарегистрироваться</a>
+	</center>
+</main>
+</div>
+</div>

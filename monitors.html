@@ -1,0 +1,400 @@
+<html> 
+<head>
+<style>
+/** _______________________________МЕНЮ________________________________**/
+*, *::after, *::before {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+#mainmenu {
+position: relative;
+background: #9a58cc;
+height: 40px;
+margin: 0px 0;
+padding: 0;
+float: left;
+width: 100%;
+z-index: 10;
+}
+#mainmenu ul {
+clear: left;
+position: relative;
+right: 50%;
+height: 40px;
+float: right;
+text-align: center;
+font: 15px Arial, Helvetica, sans-serif;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+/** Основные пункты **/
+#mainmenu > ul > li {
+position: relative;
+left: 50%;
+float: left;
+height: 40px;
+padding: 0;
+margin: 0
+}
+#mainmenu > ul > li > a {
+border-left: 1px solid #662d91;
+display: block;
+color: white;
+text-decoration: none;
+padding: 0 20px;
+line-height: 40px;
+}
+#mainmenu > ul > li:first-child > a {
+border: none
+}
+#mainmenu > ul > li:hover > a, #mainmenu > ul > li.hover > a, #mainmenu > ul > li.active > a {
+color: white;
+}
+#mainmenu > ul > li:hover, #mainmenu > ul > li.hover, #mainmenu > ul > li.active {
+background: #662d91;
+}
+
+/* Выпадающие подпункты */
+#mainmenu ul li ul {
+position: absolute;
+left: 0;
+top: 40px;
+display: none;
+list-style: none;
+visibility: hidden;
+padding: 0;
+margin: 0;
+width: 200px
+}
+#mainmenu > ul > li ul li {
+background-color: #662d91;
+position: relative;
+left: 0;
+display: list-item;
+float: none;
+height: auto;
+margin: 0;
+text-align: left;
+}
+#mainmenu ul li ul li a {
+border-bottom: 1px solid #999;
+display: block;
+color: white;
+padding: 10px 15px;
+text-decoration: none;
+}
+#mainmenu ul li ul li.parent a {
+position: relative;
+}
+#mainmenu ul li ul > li.parent > a::before {
+border-top: 1px solid #fff;
+border-right: 1px solid #fff;
+content: "";
+display: block;
+position: absolute;
+right: 15px;
+top: 50%;
+transform: translateY(-50%) rotate(45deg);
+height: 6px;
+width: 6px;
+}
+#mainmenu ul li ul li:hover, #mainmenu ul li ul li.hover {
+background-color: #662d91;
+}
+#mainmenu ul li:hover ul, #mainmenu ul li.hover ul {
+display: block
+}
+
+/* Выпадающие пункты второго уровня */
+#mainmenu ul li:hover > ul {
+opacity: 1;
+visibility: visible;
+margin: 0;
+}
+#mainmenu ul li ul li ul {
+top: 0;
+left: 200px;
+margin: 0 0 0 20px;
+width: 180px
+}
+.head {
+	 background-color:#662d91;
+ } 
+* {
+	padding:0;
+	margin:0 px;
+}
+a {
+	text-decoration:none;
+	color:#4db2ff;
+	font-size:14px;
+}
+body {
+	background: white;
+	font-family:"Roboto", sans-self, Helvetica, Arial;
+	margin:0;
+	background:url(rr.jpg);
+}
+.ico img {
+height: 100 px;
+margin-top: 7 px;
+padding: 0 12 3 20px;
+background:#662d91;
+ } 
+/** _______________________________МЕНЮ КОНЕЦ________________________________**/
+/*.wrapper {
+padding-bottom : 50px;
+display: table;
+height: 100%;
+min-height:100%;
+}
+.footer {
+position : fixed;
+bottom: 0;
+background: #2e1542;
+width:100%;
+height:120px;
+padding: 20px;
+color: white;
+line-height: 1.7;
+display:table;
+}*/
+.content {
+width:83.33%;
+margin:30px auto 0 auto;
+box-sizing: border-box;
+min-height: 100%;
+padding-bottom: 90px;
+font-family: Arial;
+font-size: 20px;
+}
+.main {
+margin-right:280px;
+background:#fbfbfb;
+padding-bottom:50;
+}
+p {
+	text-align:justify;
+	padding: 5px;
+    display:inline-block;
+	line-height: 1.7;
+}
+h1 {
+	text-align:center;
+	margin: 40px;
+	padding: 0;
+}
+.container {
+	width: 900px;
+    padding: 16px;
+    background-color: white;
+	border-radius: 18px;
+	padding-bottom: 90px;
+	margin: 34px 160px 23px;
+}
+.spoiler {
+  border: 1px solid #e0e0e0;
+  padding: 0 1em;
+  line-height: 1.7;
+  cursor: pointer;
+}
+.spoiler details {
+  padding: 1em 0;
+}
+.spoiler details + details { 
+  border-top: 1px solid #e0e0e0;
+}
+.spoiler summary {
+  color: #4f0070;
+}
+.spoiler details div {
+  overflow: hidden;
+  padding: 1em 1em 0;
+}
+.spoiler details[open] div {
+  animation: spoiler 1s;
+}
+@keyframes spoiler {
+  0%   {max-height: 0;}
+  100% {max-height: 10em;}
+}
+.button{
+	background-color: #662d91;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+	border-radius: 18px;
+}
+h3{
+	margin:12px;
+}
+.consbut{
+	margin: -20 0 8px;
+}
+
+</style>
+</head>
+<header>
+<div class = "head">
+<div class="ico"><a href='sate.html'><img src="1122.png"></a></div>
+</header>
+<div id="mainmenu">
+<ul>
+<li><a href="sate.html">ГЛАВНАЯ</a></li>
+<li><a href="#">ФОРУМ СПЕЦИАЛИСТОВ</a></li>
+<!-- Пункт меню 2 -->
+<li class="active"><a href="#" class="active">РАЗДЕЛЫ</a>
+<ul>
+<li class="parent"><a href="#">Программное обеспечение</a>
+<ul>
+<li><a href="os.html">Операционная система</a></li>
+<li><a href="#">Файлы</a></li>
+<li><a href="#">...</a></li>
+</ul>
+</li>
+<li class="parent"><a href="#">Аппаратное обеспечение</a>
+<ul>
+<li><a href="monitors.html">Монитор</a></li>
+<li><a href="#">Системный блок</a></li>
+<li><a href="#">Периферия <br>(мышь, клавиатура, колонки)</a></li>
+</ul>
+</li>
+<li><a href="#">подпункт 2.4</a></li>
+<li><a href="#">Длинный подпункт, длинный подпункт</a></li>
+</ul>
+</li>
+<li><a href="reg.html">РАЗРАБОТЧИКИ</a></li>
+<li><a href="#">РЕГИСТРАЦИЯ/ВХОД</a>
+<ul class="last">
+<li><a href="regPol.html">Я пользователь</a></li>
+<li><a href="regSP.html">Я специалист</a></li>
+</ul>
+</li>
+</li>
+</ul>
+</div>
+<!-- Конец блока #mainmenu -->
+
+<div class="container">
+<div class="content">
+<main>
+<h1>Частые неисправности мониторов</h1>
+</main>
+</head>
+<body>
+
+<div class="spoiler">
+  
+  <details>
+    <summary>1. Монитор не включается</summary>
+    <div align="justify">Причиной такой неисправности ЖК мониторов чаще всего является выход 
+	из строя платы источника питания.
+	<br>В последнее время стали модными мониторы с внешним источником питания ― это позволяет заменить его в 
+	случае поломки. Если такового нет, 
+	то придется разбирать монитор и искать неисправность на плате.
+	<br>Перед ремонтом, дайте монитору постоять минут 10, отключенным от сети. 
+	За это время разрядится высоковольтный конденсатор.
+	<br><font color="#FF0000"><b>ВНИМАНИЕ, ОПАСНО ДЛЯ ЖИЗНИ!</b></font>
+	если сгорел диодный мост и ШИМ-транзистор!
+	</div>
+  </details>
+  
+  <details>
+    <summary>2. Мигает или гаснет изображение</summary>
+	
+	<center>
+	<img width = "670" height = "344" src = "mon2.jpg" style="margin: 10px" alt="rfff"/>
+	</center>
+	
+    <div align="justify">Причина ― неисправность блока питания.
+	<br>Сначала нужно проверить кабели питания и сигнала ― они должны <b>надежно</b> крепиться в разъемах. 
+	Мигающее изображение на мониторе говорит о том, что источник 
+	напряжения подсветки монитора постоянно "соскакивает" с рабочего режима.
+	<br>Чаще всего причина тому ― вздутые электролитические конденсаторы, микротрещины в пайке и неисправная микросхема TL431. 
+	Вздутые конденсаторы чаще всего стоят 820 мкФ 16 В, их можно заменить на большую емкость и большее напряжение.<br>На AliExpress
+	самые дешевые и надежные ― это конденсаторы Rubycon 1000 мкФ 25 В и конденсаторы Nippon 1500 мкФ 16 В. 
+	Дешевле (обязательно на 105 градусов) ― Nichicon 1000 мкФ 25 В. 
+	</div>
+
+</details>
+
+<details>
+    <summary>3. Самопроизвольно выключается</summary>
+    <div align="justify">Содержимое 3</div>
+</details>
+
+<details>
+    <summary>4. Нет подсветки</summary>
+    <div align="justify">Содержимое 4</div>
+  </details>
+  
+  <details>
+    <summary>5. Вертикальные полосы на изображении</summary>
+    <div align="justify">Содержимое 4</div>
+  </details>
+  
+  <details>
+    <summary>6. Пятна или горизонтальные полосы</summary>
+    <div align="justify">Содержимое 4</div>
+  </details>
+  
+  <details>
+    <summary>7. Нет изборажения, но подсветка есть</summary>
+    <div align="justify">Содержимое 4</div>
+  </details>
+  
+  <details>
+    <summary>8. Не реагирует на кнопки управления</summary>
+    <div align="justify">Содержимое 4</div>
+  </details>
+  
+  <details>
+    <summary>9. Пониженная яркость</summary>
+    <div align="justify">Содержимое 4</div>
+  </details>
+  
+  <details>
+    <summary>10. Шум, муар и дрожание изображения</summary>
+    <div align="justify">Содержимое 4</div>
+  </details>
+</div>
+ <p style="font-size:14px"><font color="#808080">Данные взяты с сайта 
+ <a href="https://masterpaiki.ru/">Masterpaiki.ru</a></font></p>
+ <h3>Не нашли, что искали? Вы можете: 
+ </h3>
+ 
+ <center>
+ <img width = "250" height = "244" src = "конс.jpg" alt=""/>
+ </center>
+
+ 
+ <div class="consbut"> 
+ <center>
+ <a href="help" class="button">ПОПРОСИТЬ ПОМОЩИ</a>
+ </center>
+ </div>
+  
+<center>
+<p> ИЛИ </p>
+</center>
+
+<center>
+<a href="for" class="button">ПРОКАЧАТЬ СВОИ ЗНАНИЯ</a>
+</center>
+</div>
+</div>
+</div> 
+</body>
+</html>
